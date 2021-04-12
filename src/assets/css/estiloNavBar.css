@@ -1,0 +1,83 @@
+@-webkit-keyframes up-underline {
+    0% { padding: 22px 0px; }    
+    100% { padding: 6px 0px; }
+}
+ 
+@-moz-keyframes up-underline {
+    0% { padding: 22px 0px; }    
+    100% { padding: 6px 0px; }
+}
+ 
+@-o-keyframes up-underline {
+    0% { padding: 22px 0px; }    
+    100% { padding: 6px 0px; }
+}
+ 
+@keyframes up-underline {
+    0% { padding: 22px 0px; }    
+    100% { padding: 6px 0px; }
+}
+ 
+@-webkit-keyframes down-underline {
+    0% { padding: 6px 0px; }    
+    100% { padding: 22px 0px; }
+}
+ 
+@-moz-keyframes down-underline {
+    0% { padding: 6px 0px; }    
+    100% { padding: 22px 0px; }
+}
+ 
+@-o-keyframes down-underline {
+    0% { padding: 6px 0px; }    
+    100% { padding: 22px 0px; }
+}
+ 
+@keyframes down-underline {
+    0% { padding: 6px 0px; }    
+    100% { padding: 22px 0px; }
+}
+ 
+body{
+    margin:0;
+}
+ 
+.menu{
+    text-align: center;
+    line-height: 3.5;
+    border-bottom: 4px solid #E91E63;
+}
+ 
+    .menu a{
+        padding: 22px 0px;
+        margin-right: 40px;
+        font-family: arial;
+        font-size: 18px;
+        text-decoration: none;
+        color: #282929;
+        border-bottom: 3px solid #e91e63;
+         
+        -webkit-animation: down-underline .4s;
+        -moz-animation: down-underline .4s;
+        -o-animation: down-underline .4s;
+        animation: down-underline .4s;
+ 
+        -webkit-transition: all .2s ease-in;
+        -moz-transition: all .2s ease-in;
+        -o-transition: all .3s ease-in;
+        transition: all .3s ease-in;
+    }
+ 
+    .menu a:hover{
+        color:#e91e63;
+        padding: 6px 0px;
+             
+        -webkit-animation: up-underline .4s;
+        -moz-animation: up-underline .4s;
+        -o-animation: up-underline .4s;
+        animation: up-underline .4s;
+    }
+ 
+    .menu a.active{
+        padding: 6px 0;
+    }

@@ -1,0 +1,11 @@
+<app-barra-nav-sup></app-barra-nav-sup>
+<router-outlet></router-outlet>
+<div>
+    <app-inicio *ngIf="!router.url.includes('productos') && !router.url.includes('proveedores')
+    && !router.url.includes('contacto') && !router.url.includes('distribuidores')
+    && !router.url.includes('acercade')">
+        
+    </app-inicio>
+    
+</div>
+
